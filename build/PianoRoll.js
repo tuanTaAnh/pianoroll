@@ -1,5 +1,10 @@
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
+/******/    const isBrowser = () => typeof window !== "undefined"
+/******/    // node
+/******/    isBrowser() // false
+/******/    // browser
+/******/    isBrowser() // true
 /******/ 	var parentJsonpFunction = window["webpackJsonp"];
 /******/ 	window["webpackJsonp"] = function webpackJsonpCallback(chunkIds, moreModules) {
 /******/ 		// add "moreModules" to the modules object,
