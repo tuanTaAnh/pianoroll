@@ -21,6 +21,9 @@
     "style-loader": "^0.12.3",
     "url-loader": "^0.5.6"
   },
+  "output": {
+    "globalObject": "this"
+  },
   "dependencies": {
     "binary-search-bounds": "^2.0.3",
     "brfs": "^1.4.0",
